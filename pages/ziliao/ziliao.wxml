@@ -1,0 +1,19 @@
+<!--pages/ziliao/ziliao.wxml-->
+<view class="go">
+  完善资料
+</view>
+<block wx:for="{{list1}}">
+  <view class="in">
+    <view>
+      {{item}}
+    </view>
+    <input placeholder="请输入" />
+
+  </view>
+
+
+</block>
+
+<view class="s">
+  <view bindtap="sousuo">提交</view>
+</view>

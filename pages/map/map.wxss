@@ -1,0 +1,26 @@
+/* pages/map/map.wxss */
+.s{
+  position: absolute;
+  width: 90%;
+  top: 10px;
+  left: 5%;
+  display: flex;
+  height:100rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.s input{
+  flex: 3;
+  height: 100%;
+  line-height: 100rpx;
+}
+
+.s view{
+  flex:1;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background-color: #FF4500;
+  color: white;
+}

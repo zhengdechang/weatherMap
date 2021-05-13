@@ -1,0 +1,14 @@
+<view class="go">
+  天气小知识
+</view>
+
+<block wx:for="{{list1}}">
+  <view class="go2">
+    <view style="  font-weight: bold;margin-bottom:10rpx">
+      {{item[0]}}
+    </view>
+    <view>
+      {{item[1]}}
+    </view>
+  </view>
+</block>

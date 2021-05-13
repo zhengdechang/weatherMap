@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view wx:if="{{!hasUserInfo}}" class="container">
+  <view class="userinfo">
+    <button bindtap="getUserProfile" type="primary">
+		  <text>授权登录</text>
+	 </button>
+  </view>
+</view>
+<view wx:else>
+  <view class="container2">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <block wx:for="{{list2}}">
+    <view data-url="{{item[1]}}" bindtap="gonext" class="go">
+      {{item[0]}}
+    </view>
+  </block>
+
+  <view bindtap="exit" class="exit">
+    退出登录
+  </view>
+</view>

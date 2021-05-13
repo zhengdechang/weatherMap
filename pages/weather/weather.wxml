@@ -1,0 +1,41 @@
+<!--pages/weather/weather.wxml-->
+<view wx:if="{{flag == false}}" bindtap="openset" class="set">
+  获取位置
+</view>
+<view class="title">
+  {{city}}
+</view>
+<view class="t">
+  <view >
+    <image class="img2" src="/img/{{weatherlist[0].wea_img}}.png" mode="widthFix"></image>
+    <view class="t1">
+      {{weatherlist[0].tem1}}/{{weatherlist[0].tem2}}
+    </view>
+    <view>
+      {{weatherlist[0].wea}}
+    </view>
+  </view>
+  <view class="t3">
+    {{weatherlist[0].air_tips}}
+  </view>
+</view>
+
+<block wx:for="{{weatherlist}}">
+  <view class="list">
+    <view>
+      <image src="/img/{{item.wea_img}}.png" mode="widthFix"></image>
+    </view>
+    <view style="flex:1.5">
+      {{item.date}}
+    </view>
+    <view>
+      {{item.week}}
+    </view>
+    <view>
+      {{item.wea}}
+    </view>
+    <view>
+      {{item.tem1}}/{{item.tem2}}
+    </view>
+  </view>
+</block>

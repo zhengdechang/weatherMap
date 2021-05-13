@@ -1,0 +1,10 @@
+<!--pages/coll/coll.wxml-->
+<view class="go">
+  地点收藏
+</view>
+
+<block wx:for="{{collect}}">
+  <view class="go2">
+    {{item.callout.content}}
+  </view>
+</block>

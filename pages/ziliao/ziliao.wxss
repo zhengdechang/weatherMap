@@ -1,0 +1,46 @@
+/* pages/ziliao/ziliao.wxss */
+
+page {
+  background-color: whitesmoke;
+}
+
+.go {
+  width: 90%;
+  margin: 10px 5% 10px 5%;
+  height: 90rpx;
+  line-height: 90rpx;
+  /* border-left: 10px solid #FF4500; */
+  background-color: #FF4500;
+  color: white;
+  text-align: center;
+}
+
+.s{
+  width: 90%;
+  margin: 10px 5% 10px 5%;
+}
+
+.s view{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  border: #FF4500 solid 1px;
+  color: #FF4500;
+}
+
+.in{
+  display: flex;
+  width: 90%;
+  margin: 10px 5% 10px 5%;
+  background-color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.in input{
+  padding-left: 20rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+}

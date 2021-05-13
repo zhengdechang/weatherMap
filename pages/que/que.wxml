@@ -1,0 +1,7 @@
+<view class="go">
+  问题反馈
+</view>
+<view class="s">
+  <textarea placeholder="请输入"/>
+  <view bindtap="sousuo">提交</view>
+</view>

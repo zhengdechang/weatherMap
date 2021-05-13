@@ -1,0 +1,71 @@
+/* pages/weather/weather.wxss */
+.set {
+  height: 100rpx;
+  width: 80%;
+  border-radius: 20rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 50rpx 10%;
+  color: white;
+  background-color: #FF4500;
+}
+
+.t {
+  display: flex;
+  height: 375rpx;
+  margin: 10px;
+}
+
+.t view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.t1{
+  margin-top: 50px;
+}
+
+.img2 {
+  filter: blur(15rpx);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title {
+  font-size: 50rpx;
+  margin-left: 20rpx;
+}
+
+.list {
+  display: flex;
+  margin-right: 10px;
+  font-size: 26rpx;
+}
+.t3{
+  background-color: #fdc6b3;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+}
+
+.list view {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #f09e81;
+}
+
+.list view image {
+  width: 50%;
+  height: 50%
+}
